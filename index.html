@@ -3,47 +3,60 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DREAM SMP</title>
+<title>Bossie Server</title>
 
 <style>
 body{
     margin:0;
     font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#000814,#001d3d);
+    background:#121212;
     color:white;
     text-align:center;
 }
 
 header{
-    padding:50px 20px;
+    background:#1f1f1f;
+    padding:30px;
 }
 
 h1{
-    color:#39ff14;
-    font-size:55px;
+    color:#00ff88;
 }
 
-.card{
-    background:rgba(255,255,255,.08);
-    margin:20px;
+.box{
+    width:90%;
+    max-width:800px;
+    margin:20px auto;
+    background:#1f1f1f;
     padding:20px;
-    border-radius:20px;
-    border:2px solid #39ff14;
+    border-radius:15px;
 }
 
-button{
-    background:#39ff14;
-    border:none;
-    padding:12px 20px;
+.ip{
+    color:#00ff88;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.donate{
+    background:#00ff88;
+    color:black;
+    padding:15px;
+    margin:10px 0;
     border-radius:10px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.contact{
     font-size:18px;
-    cursor:pointer;
+    line-height:1.8;
 }
 
 footer{
-    margin-top:40px;
-    padding:20px;
-    background:#000;
+    margin-top:30px;
+    padding:15px;
+    background:#1f1f1f;
 }
 </style>
 </head>
@@ -51,56 +64,44 @@ footer{
 <body>
 
 <header>
-<h1>⚔ DREAM SMP ⚔</h1>
-<p>Қазақстандағы Minecraft Survival сервері</p>
+    <h1>🎮 BOSSIE SERVER</h1>
+    <p>Java & Bedrock Minecraft Server</p>
 </header>
 
-<div class="card">
-<h2>🌐 Сервер IP</h2>
-<p id="ip">kaussik157.aternos.me</p>
-<button onclick="copyIP()">IP Көшіру</button>
+<div class="box">
+    <h2>💻 Java Edition</h2>
+    <p class="ip">kaussik157.aternos.me</p>
+    <p>Port: 41056</p>
 </div>
 
-<div class="card">
-<h2>📜 Ережелер</h2>
-<p>❌ Чит жоқ</p>
-<p>❌ Гриферлік жоқ</p>
-<p>✅ Барлығын құрметте</p>
+<div class="box">
+    <h2>📱 Bedrock Edition</h2>
+    <p class="ip">bossie.aternos.host</p>
+    <p>Port: 41056</p>
 </div>
 
-<div class="card">
-<h2>💎 Донат</h2>
-<p>VIP — 500₸</p>
-<p>MVP — 1000₸</p>
-<p>LEGEND — 2000₸</p>
+<div class="box">
+    <h2>💎 Донаттар</h2>
+
+    <div class="donate">VIP — 300 ₸</div>
+
+    <div class="donate">PREMIUM — 400 ₸</div>
+
+    <div class="donate">ADMIN — 800 ₸</div>
 </div>
 
+<div class="box">
+    <h2>📞 Байланыс</h2>
 
-<div class="card">
-<h2>📱 Байланыс</h2>
-
-<a href="https://t.me/lunex0qq">
-<button class="btn">📢 Telegram</button>
-</a>
-
-<br><br>
-
-<a href="https://wa.me/77783758591">
-<button class="btn">💬 WhatsApp</button>
-</a>
-
+    <div class="contact">
+        Telegram: @lunex0qq<br>
+        WhatsApp: +7 778 375 85 91
+    </div>
 </div>
 
 <footer>
-🔥 DREAM SMP 2026 🔥
+    © 2026 Bossie Server
 </footer>
-
-<script>
-function copyIP(){
-navigator.clipboard.writeText("kaussik157.aternos.me");
-alert("IP көшірілді!");
-}
-</script>
 
 </body>
 </html>
